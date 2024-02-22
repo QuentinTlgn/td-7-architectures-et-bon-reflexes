@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class StockageProduitImpl implements StockageProduit{
 
+    public StockageProduitImpl() {
+        this.produits = new ArrayList<Produit>();
+    }
+
     private ArrayList<Produit> produits = new ArrayList<Produit>();
 
     @Override
