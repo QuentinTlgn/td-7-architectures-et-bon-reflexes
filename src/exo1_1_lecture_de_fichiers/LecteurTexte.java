@@ -1,6 +1,6 @@
 package exo1_1_lecture_de_fichiers;
 
-public class LecteurTexte implements Lecteur {
+public class LecteurTexte implements TraitementFichier{
     private TraitementFichier traitement;
 
     public LecteurTexte(TraitementFichier traitement) {
@@ -8,10 +8,8 @@ public class LecteurTexte implements Lecteur {
     }
 
     @Override
-    public void lire() {
-        String contenu = "null";
-        traitement.traiter(contenu);
-    }
-    
-    
+    public void traiter(String contenu) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'traiter'");
+    }  
 }
